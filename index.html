@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чайхана №1 — Восточная кухня</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- SECTION 1: Header / Menu (Flexbox колдонулат) -->
+    <header class="bg-dark text-white sticky-top py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="text-white text-decoration-none h3 mb-0">Чайхана №1</a>
+            <nav>
+                <ul class="nav-links d-flex list-unstyled m-0 gap-3">
+                    <li><a href="#hero" class="text-white text-decoration-none">Башкы бет</a></li>
+                    <li><a href="#about" class="text-white text-decoration-none">Биз жөнүндө</a></li>
+                    <li><a href="#features" class="text-white text-decoration-none">Артыкчылыктар</a></li>
+                    <li><a href="#menu-data" class="text-white text-decoration-none">Меню</a></li>
+                    <li><a href="#contact" class="text-white text-decoration-none">Заказ берүү</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECTION 2: Hero Section -->
+        <section id="hero" class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+            <div class="container">
+                <h1 class="display-3 fw-bold mb-3">Кош келиңиздер, Чайхана №1!</h1>
+                <p class="fs-4 mb-4">Чыныгы чыгыш даамы, таза азыктар жана өзгөчө улуттук атмосфера.</p>
+                <a href="#contact" class="btn btn-warning btn-lg me-2">Үстөл брондоо</a>
+                <a href="#menu-data" class="btn btn-outline-light btn-lg">Менюну көрүү</a>
+            </div>
+        </section>
+
+        <!-- SECTION 3: Information / About Section -->
+         </div>
+                </div><section id="about" class="py-5 bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <h2>Биз жөнүндө</h2>
+                        <h3>Салттуу чыгыш гостеприимствосу</h3>
+                        <p>«Чайхана №1» — бул чыгыш ашканасынын эң даамдуу тамактарын сунуштаган заманбап ресторан. Биз ар бир тамакты байыркы рецепттер менен, жаңы союлган эттен жана тандырдан чыккан ысык нандардан даярдайбыз.</p>
+                        <p>Биздин башкы максат — ар бир келген конокко үйдөгүдөй жылуулук тартуулоо.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600" alt="Ресторан интерьери" class="img-fluid rounded shadow">
+                   
+            </div>
+        </section>
+
+        <!-- SECTION 4: Features Section (CSS Grid & Bootstrap Cards) -->
+        <section id="features" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Эмне үчүн бизди тандашат?</h2>
+                <div class="grid-container">
+                    <div class="card custom-card">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Аутентиктүү даам</h3>
+                            <p class="card-text">Чыныгы чыгыш татымалдары жана салттуу казан-аяктарда даярдалган тамактар.</p>
+                        </div>
+                    </div>
+                    <div class="card custom-card">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Тандыр жана Мангал</h3>
+                            <p class="card-text">Табигый жыгачтын чогунда бышырылган шишкебек жана тандыр нан.</p>
+                        </div>
+                    </div>
+                    <div class="card custom-card">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Таза өнүмдөр</h3>
+                            <p class="card-text">Күн сайын текшерилген, жаңы союлган "Халал" стандартындагы эт.</p>
+                        </div>
+                    </div>
+                    <div class="card custom-card">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Ыкчам жеткирүү</h3>
+                            <p class="card-text">Буйрутмаңызды 40 мүнөттүн ичинде ысык бойдон үйүңүзгө жеткиребиз.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: JavaScript Data Section (Dynamic Render) -->
+        <section id="menu-data" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Биздин Популярдуу Меню</h2>
+                <div id="js-card-container" class="row g-4">
+                    <!-- Бул жерге JS аркылуу Card'тар түшөт -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: Form Section (Validation & LocalStorage) -->
+        <section id="contact" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <h2 class="text-center mb-4">Үстөл Брондоо / Заказ берүү</h2>
+                        
+                        <!-- Alert message (Убакыт өткөндө жоголот) -->
+                        <div id="alert-msg" class="alert d-none mb-3" role="alert"></div>
+
+                        <form id="orderForm" class="p-4 border rounded shadow-sm bg-white">
+                            <div class="mb-3">
+                                <label for="userName" class="form-label">Сиздин атыңыз:</label>
+                                <input type="text" id="userName" class="form-control" placeholder="Атыңызды жазыңыз">
+                            </div>
+                            <div class="mb-3">
+                                <label for="userPhone" class="form-label">Телефон номериңиз:</label>
+                                <input type="tel" id="userPhone" class="form-control" placeholder="+996 (700) 000-000">
+                            </div>
+                            <div class="mb-3">
+                                <label for="dishSelect" class="form-label">Тандаган тамагыңыз:</label>
+                                <select id="dishSelect" class="form-select">
+                                    <option value="">-- Тамакты тандаңыз --</option>
+                                    <option value="Плов Фергана">Палав Фергана</option>
+                                    <option value="Уйгур Лагманы">Уйгур Лагманы</option>
+                                    <option value="Кой этинен шишкебек">Кой этинен шишкебек</option>
+                                    <option value="Тандыр Самса">Тандыр Самса</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="userMessage" class="form-label">Кошумча каалооңуз (адам саны ж.б.):</label>
+                                <textarea id="userMessage" class="form-control" rows="3" placeholder="Мисалы: 4 кишиге саат 19:00го"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-warning w-100 fw-bold">Брондоо / Заказ жөнөтүү</button>
+                        </form>
+
+                        <!-- LocalStorage аркылуу сакталган акыркы заказ -->
+                        <div id="savedOrder" class="mt-4 p-3 bg-white border rounded d-none">
+                            <h4>Сиздин акыркы заказываңыз (LocalStorage сакталды):</h4>
+                            <p id="savedOrderText" class="mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- SECTION 7: Footer -->
+    <footer class="bg-dark text-white ">
+        <div class="container text-center">
+            <p class="mb-1">Чайхана №1 — Настоящий вкус Востока</p>
+            <p class="mb-1">Дарек: Бишкек ш., Манас проспектиси, 10 | Тел: +996 (555) 12-34-56</p>
+            <small class="text-muted">&copy; 2026 Чайхана №1. Экзамендик фронтенд долбоор.</small>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/bootstrap.bundle.min.js"></script>
+    <!-- Собственный Script -->
+    <script src="index.js"></script>
+</body>
+</html>
